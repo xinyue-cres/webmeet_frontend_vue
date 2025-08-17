@@ -7,7 +7,7 @@
         />
         <div class="login-form-wrapper">
             <div class="login-header">
-                <h1 class="login-title">系统登录</h1>
+                <h1 class="login-title">Web-Meeting</h1>
                 <p class="login-subtitle">欢迎回来，请登录您的账号</p>
             </div>
 
@@ -44,7 +44,7 @@
 
 <script setup>
 import { reactive, ref } from 'vue';
-import loginBg from "../../assets/img/login-bg2.jpg";
+import loginBg from "~/img/login-bg2.jpg";
 
 
     const loginFormRef = ref()
@@ -101,6 +101,7 @@ import loginBg from "../../assets/img/login-bg2.jpg";
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .login-bg {
@@ -121,7 +122,7 @@ import loginBg from "../../assets/img/login-bg2.jpg";
 }
         
 .login-subtitle {
-    color: #deedee;
+    color: #e5f0f0;
     font-size: 14px;
 }
 
