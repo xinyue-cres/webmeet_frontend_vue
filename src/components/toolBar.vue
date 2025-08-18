@@ -62,7 +62,7 @@ import { ChatDotRound, Operation, User } from '@element-plus/icons-vue'
 }
 
 .toolbar-menu {
-    width: 250.8px;
+    width: 200.8px;
     justify-content: center;
 
 }

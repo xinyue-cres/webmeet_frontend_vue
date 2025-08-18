@@ -3,11 +3,11 @@
 </template>
 
 
-<script>
+<script setup>
 
 </script>
 
 
-<style>
+<style lang="less" scoped>
 
 </style>

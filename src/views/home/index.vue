@@ -4,15 +4,26 @@
       <el-aside class="left">
         <ToolBar/>
       </el-aside>
-      <el-aside class="middle">list</el-aside>
-      <el-main class="right">Main</el-main>
+      <el-aside class="middle">
+        <ChatList v-if="toolBarIndex==1"/>
+        <ContactList v-if="toolBarIndex==2"/>
+      </el-aside>
+      <el-main class="right">
+        <ChatPanel/>
+      </el-main>
     </el-container>
   </div>
 </template>
 
 
 <script setup>
-  import ToolBar from '../../components/toolBar.vue';
+import ToolBar from '@/components/toolBar.vue';
+import ChatList from '@/components/chatList.vue';
+import ChatPanel from '@/components/chatPanel.vue';
+import ContactList from '@/components/contactList.vue';
+
+const toolBarIndex = 1;
+
 </script>
 
 
@@ -28,7 +39,7 @@
     background: #f8f8f8;
     color: rgb(8, 8, 8);
     .left {
-        width: 250px;
+        width: 200px;
         height: 100%;
         min-width: 50px;
         border-right: 1px solid #ccc;
