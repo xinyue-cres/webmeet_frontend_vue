@@ -10,7 +10,7 @@
             active-text-color="#ffd04b"
             background-color="#545c64"
             class="toolbar-menu"
-            default-active="1"
+            :default-active="toolBarIndex"
             text-color="#fff"
             @open="handleOpen"
             @close="handleClose"
@@ -38,10 +38,16 @@
 
 <script setup>
 import loginBg from "~/img/login-bg2.jpg";
-import { ChatDotRound, Operation, User } from '@element-plus/icons-vue'
+import { ChatDotRound, Operation, User } from '@element-plus/icons-vue';
+import { useToolBarStore } from "../store/toolBar";
+import { computed } from "vue";
+
+    const store = useToolBarStore()
+    const toolBarIndex = computed(() => String(store.toolBarIndex));
 
     const handleSelect = (key, keyPath) => {
         console.log(key, keyPath)
+        store.setToolBarIndex(key);
     }
 
     const handleOpen = (key, keyPath) => {

@@ -141,7 +141,7 @@ import loginBg from "~/img/login-bg2.jpg";
     flex-direction: column;
 }
 
-::v-deep .el-form-item__label {
+:deep .el-form-item__label {
     color: rgb(255, 255, 255);
 }
 

@@ -21,8 +21,12 @@ import ToolBar from '@/components/toolBar.vue';
 import ChatList from '@/components/chatList.vue';
 import ChatPanel from '@/components/chatPanel.vue';
 import ContactList from '@/components/contactList.vue';
+import { useToolBarStore } from "@/store/toolBar";
+import { computed } from 'vue';
 
-const toolBarIndex = 1;
+const store = useToolBarStore();
+
+const toolBarIndex = computed(() => store.toolBarIndex);
 
 </script>
 

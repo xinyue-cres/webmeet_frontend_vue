@@ -34,10 +34,10 @@
   height: 100%;
 }
 
-::v-deep .el-result__subtitle p {
+:deep .el-result__subtitle p {
   color: rgb(233, 230, 230);
 }
-::v-deep .el-result__title  p {
+:deep .el-result__title  p {
   color: rgb(223, 221, 221);
 }
 
